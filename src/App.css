@@ -1,0 +1,53 @@
+#root {
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.weatherTable {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cityDetails {
+  border-bottom: 1px solid #CCC;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cityDetails .header {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
+}
+.weatherDesc {
+  float: right;
+}
+.cityName {
+  float: left;
+  text-transform: uppercase;
+}
+.temperatureDetails {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+}
+.maxTemp, .minTemp, .pressure {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*mobile styles*/
+@media only screen and (max-width: 767px) {
+  #root {
+    padding: 5px;
+  }
+  .cityDetails {
+    padding: 10px;
+  }
+}
