@@ -10,7 +10,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    fetch("http://api.openweathermap.org/data/2.5/group?units=Imperial&id=1264527,1273865,1264521,1259425,1254361,7603116,1272013,1257629,1253286&appid=d465261d95b43bff6d44b34c18712ba6")
+    fetch("/api/weather")
     .then(results => {
       return results.json();
     }).then(data => {
